@@ -8198,12 +8198,12 @@ Estimation and hypothesis testing are a HUGE area of theoretical and applied sta
 
 ```
 ##    user  system elapsed 
-##   0.012   0.000   0.013
+##   0.012   0.000   0.012
 ```
 
 ```
 ##    user  system elapsed 
-##   0.011   0.000   0.010
+##   0.015   0.000   0.016
 ```
 
 

@@ -290,7 +290,7 @@ Also, I use syntax highlighting to emphasize R code in this lecture. Simply copy
 ## What Your R Console Looks Like (for Mac OS X)
 
 <div style='text-align: center;'>
-    <img height='400' src='/Users/chris/Documents/SickKidsMaterials/Rlecture/LectureImages/RConsoleMac.png' />
+    <img height='400' src='/Users/chris/Documents/Rlecture/LectureImages/RConsoleMac.png' />
 </div>
 
 Spend some time checking out the drop down menu options. And read the contents printed to the console upon start up.  
@@ -3921,7 +3921,7 @@ The dataset contains information on 8 variables collected from 137 individuals. 
 * `na.strings=` tells R how to handle missing data
 
 ```{r,echo=TRUE,results='markup'}
-X <- read.table("/Users/chris/Documents/SickKidsMaterials/Rlecture/DataExamples/VAlung.txt",header=TRUE,sep="\t")
+X <- read.table("/Users/chris/Documents/Rlecture/DataExamples/VAlung.txt",header=TRUE,sep="\t")
 dim(X)
 head(X, n=2)
 ```
@@ -3951,9 +3951,9 @@ Some other notes about `read.table()`.
 The `read.csv()` function is simply a convenience wrapper for `read.table()`. In other words, it simply specifies the default separator as `sep=","`. 
 
 ```{r,echo=TRUE,results='markup'}
-X <- read.csv("/Users/chris/Documents/SickKidsMaterials/Rlecture/DataExamples/VAlung.csv",header=TRUE)
+X <- read.csv("/Users/chris/Documents/Rlecture/DataExamples/VAlung.csv",header=TRUE)
 head(X, n=2)
-X <- read.table("/Users/chris/Documents/SickKidsMaterials/Rlecture/DataExamples/VAlung.csv",header=TRUE, sep=",")
+X <- read.table("/Users/chris/Documents/Rlecture/DataExamples/VAlung.csv",header=TRUE, sep=",")
 head(X, n=2)
 ```
 
@@ -3980,11 +3980,11 @@ I've found that the `XLConnect` packages works well for both .xls and .xlsx pack
 ```{r, echo=TRUE, results='markup'}
 suppressPackageStartupMessages(library(XLConnect))
 ## .xls file extension
-X <- loadWorkbook("/Users/chris/Documents/SickKidsMaterials/Rlecture/DataExamples/VAlung.xls")
+X <- loadWorkbook("/Users/chris/Documents/Rlecture/DataExamples/VAlung.xls")
 Y <- readWorksheet(X, sheet = "VAlung", header = TRUE)
 head(Y,n=1)
 ## .xlsx file extension
-A <- loadWorkbook("/Users/chris/Documents/SickKidsMaterials/Rlecture/DataExamples/VAlung.xlsx")
+A <- loadWorkbook("/Users/chris/Documents/Rlecture/DataExamples/VAlung.xlsx")
 B <- readWorksheet(A, sheet = "VAlung", header = TRUE)
 head(B,n=1)
 ```
@@ -3999,7 +3999,7 @@ Another useful package for importing/exporting Excel data to/from are is `xlsx`.
 ```{r, echo=TRUE, results='markup'}
 suppressPackageStartupMessages(library(xlsx))
 ## .xlsx file extension
-A <- read.xlsx("/Users/chris/Documents/SickKidsMaterials/Rlecture/DataExamples/VAlung.xlsx", sheetName="VAlung")
+A <- read.xlsx("/Users/chris/Documents/Rlecture/DataExamples/VAlung.xlsx", sheetName="VAlung")
 head(A,n=1)
 ```
 
@@ -4013,7 +4013,7 @@ More rarely, collaborators send me their SPSS, SAS or STATA files. These can be 
 
 ```{r, echo=TRUE, results='markup'}
 suppressPackageStartupMessages(library(foreign))
-stata <- read.dta("/Users/chris/Documents/SickKidsMaterials/Rlecture/DataExamples/VAlung.dta")
+stata <- read.dta("/Users/chris/Documents/Rlecture/DataExamples/VAlung.dta")
 head(stata, n=1)
 ```
 
@@ -4026,7 +4026,7 @@ head(stata, n=1)
 
 ```{r, echo=TRUE, results='markup'}
 suppressPackageStartupMessages(library(foreign))
-spss <- read.spss("/Users/chris/Documents/SickKidsMaterials/Rlecture/DataExamples/valung.sav",to.data.frame=TRUE)
+spss <- read.spss("/Users/chris/Documents/Rlecture/DataExamples/valung.sav",to.data.frame=TRUE)
 head(spss, n=1)
 ```
 
@@ -4072,7 +4072,7 @@ The most important functions in base R for these tasks are likely `write.table()
 ```{r, echo=TRUE, results='markup'}
 suppressPackageStartupMessages(library(datasets))
 head(cars,2)
-write.csv(x=cars, file="/Users/chris/Documents/SickKidsMaterials/Rlecture/DataExamples/cars.csv", row.names=FALSE)
+write.csv(x=cars, file="/Users/chris/Documents/Rlecture/DataExamples/cars.csv", row.names=FALSE)
 ```
 
 

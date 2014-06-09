@@ -290,7 +290,7 @@ Also, I use syntax highlighting to emphasize R code in this lecture. Simply copy
 ## What Your R Console Looks Like (for Mac OS X)
 
 <div style='text-align: center;'>
-    <img height='400' src='/Users/chris/Documents/SickKidsMaterials/LectureImages/RConsoleMac.png' />
+    <img height='400' src='/Users/chris/Documents/Rlecture/LectureImages/RConsoleMac.png' />
 </div>
 
 Spend some time checking out the drop down menu options. And read the contents printed to the console upon start up.  
@@ -631,7 +631,7 @@ a <- c(1,2,3,4,5)
 pie(table(a))
 ```
 
-<img src="figure/intro_pie.png" title="plot of chunk intro_pie" alt="plot of chunk intro_pie" style="display: block; margin: auto;" />
+<img src="assets/fig/intro_pie.png" title="plot of chunk intro_pie" alt="plot of chunk intro_pie" style="display: block; margin: auto;" />
 
 
 --- .codemargin .outmargin .nobackground
@@ -653,7 +653,7 @@ cor(a,b)
 plot(a,b,type="b")
 ```
 
-<img src="figure/intro_scatter.png" title="plot of chunk intro_scatter" alt="plot of chunk intro_scatter" style="display: block; margin: auto;" />
+<img src="assets/fig/intro_scatter.png" title="plot of chunk intro_scatter" alt="plot of chunk intro_scatter" style="display: block; margin: auto;" />
 
 --- .outmargn .codemargin .nobackground 
 
@@ -1550,10 +1550,10 @@ a
 ```
 
 ```
-##      COL1  COL2  COL3
-## ROW1 TRUE FALSE FALSE
-## ROW2 TRUE FALSE  TRUE
-## ROW3 TRUE FALSE FALSE
+##       COL1  COL2  COL3
+## ROW1  TRUE FALSE FALSE
+## ROW2  TRUE  TRUE FALSE
+## ROW3 FALSE FALSE FALSE
 ```
 
 ```r
@@ -2149,7 +2149,7 @@ summary(cars)
 plot(cars)
 ```
 
-<img src="figure/data_scatter.png" title="plot of chunk data_scatter" alt="plot of chunk data_scatter" style="display: block; margin: auto;" />
+<img src="assets/fig/data_scatter.png" title="plot of chunk data_scatter" alt="plot of chunk data_scatter" style="display: block; margin: auto;" />
 
 
 
@@ -2499,7 +2499,7 @@ datetime.today
 ```
 
 ```
-## [1] "2014-06-09 07:24:11 EDT"
+## [1] "2014-06-09 08:57:04 EDT"
 ```
 
 ```r
@@ -2770,7 +2770,7 @@ Lets just make a plot of that function using `curve()` which verifies there are 
 
 $$f(x)=a^2+4x+5,\quad a \ne 0$$ 
 
-<img src="figure/control_curve1.png" title="plot of chunk control_curve1" alt="plot of chunk control_curve1" style="display: block; margin: auto;" />
+<img src="assets/fig/control_curve1.png" title="plot of chunk control_curve1" alt="plot of chunk control_curve1" style="display: block; margin: auto;" />
 
 
 
@@ -2995,7 +2995,7 @@ curve(expr=(x^3 + 3*x^2 - 7), from=-9, to=5)
 abline(v=x,col="red")
 ```
 
-<img src="figure/control_curve2.png" title="plot of chunk control_curve2" alt="plot of chunk control_curve2" style="display: block; margin: auto;" />
+<img src="assets/fig/control_curve2.png" title="plot of chunk control_curve2" alt="plot of chunk control_curve2" style="display: block; margin: auto;" />
 
 
 
@@ -3230,7 +3230,7 @@ sd
 ```
 ## function (x, na.rm = FALSE) 
 ## sqrt(var(if (is.vector(x)) x else as.double(x), na.rm = na.rm))
-## <bytecode: 0x103bfb2e8>
+## <bytecode: 0x7fef6b9ca158>
 ## <environment: namespace:stats>
 ```
 
@@ -3494,7 +3494,7 @@ for (i in 1:dim(x)[1]) {
 
 Plots of various beta densities (beta PDF's).
 
-<img src="figure/fig4.png" title="plot of chunk fig4" alt="plot of chunk fig4" style="display: block; margin: auto;" />
+<img src="assets/fig/fig4.png" title="plot of chunk fig4" alt="plot of chunk fig4" style="display: block; margin: auto;" />
 
 
 --- .nobackground
@@ -4861,7 +4861,7 @@ install.packages(plyr,quiet=TRUE)
 ```
 
 ```
-## Error: object 'plyr' not found
+## Error in install.packages : object 'plyr' not found
 ```
 
 ```r
@@ -5300,7 +5300,7 @@ var(X)
 
 ## Random Number Generation in R
 
-<img src="figure/fig5.png" title="plot of chunk fig5" alt="plot of chunk fig5" style="display: block; margin: auto;" />
+<img src="assets/fig/fig5.png" title="plot of chunk fig5" alt="plot of chunk fig5" style="display: block; margin: auto;" />
 
 
 
@@ -5308,7 +5308,7 @@ var(X)
 
 ## Random Number Generation in R
 
-<img src="figure/fig6.png" title="plot of chunk fig6" alt="plot of chunk fig6" style="display: block; margin: auto;" />
+<img src="assets/fig/fig6.png" title="plot of chunk fig6" alt="plot of chunk fig6" style="display: block; margin: auto;" />
 
 
 
@@ -5455,7 +5455,7 @@ Spend a few minutes considering how RNG's may be used in your field of work.
 
 1. In probability theory there exist a very important law, called the [law of large numbers](http://en.wikipedia.org/wiki/Law_of_large_numbers). There are two version of the LLN, and both versions of the law state that – with virtual certainty – the sample average $\overline{X}_n=\frac1n(X_1+\cdots+X_n)$ converges to the expected value $\overline{X}_n \to \mu$ as $n \to \infty$. Using the `rpois()` function recreate the following plot and which demonstrates how the sample average converges the $\lambda$ as the sample size approaches infinity. 
 
-<img src="figure/rng_scatter.png" title="plot of chunk rng_scatter" alt="plot of chunk rng_scatter" style="display: block; margin: auto;" />
+<img src="assets/fig/rng_scatter.png" title="plot of chunk rng_scatter" alt="plot of chunk rng_scatter" style="display: block; margin: auto;" />
 
 
 --- .nobackground
@@ -5530,7 +5530,7 @@ The dataset contains information on 8 variables collected from 137 individuals. 
 
 
 ```r
-X <- read.table("/Users/chris/Documents/SickKidsMaterials/DataExamples/VAlung.txt",header=TRUE,sep="\t")
+X <- read.table("/Users/chris/Documents/Rlecture/DataExamples/VAlung.txt",header=TRUE,sep="\t")
 dim(X)
 ```
 
@@ -5574,7 +5574,7 @@ The `read.csv()` function is simply a convenience wrapper for `read.table()`. In
 
 
 ```r
-X <- read.csv("/Users/chris/Documents/SickKidsMaterials/DataExamples/VAlung.csv",header=TRUE)
+X <- read.csv("/Users/chris/Documents/Rlecture/DataExamples/VAlung.csv",header=TRUE)
 head(X, n=2)
 ```
 
@@ -5585,7 +5585,7 @@ head(X, n=2)
 ```
 
 ```r
-X <- read.table("/Users/chris/Documents/SickKidsMaterials/DataExamples/VAlung.csv",header=TRUE, sep=",")
+X <- read.table("/Users/chris/Documents/Rlecture/DataExamples/VAlung.csv",header=TRUE, sep=",")
 head(X, n=2)
 ```
 
@@ -5619,26 +5619,40 @@ I've found that the `XLConnect` packages works well for both .xls and .xlsx pack
 ```r
 suppressPackageStartupMessages(library(XLConnect))
 ## .xls file extension
-X <- loadWorkbook("/Users/chris/Documents/SickKidsMaterials/DataExamples/VAlung.xls")
+X <- loadWorkbook("/Users/chris/Documents/Rlecture/DataExamples/VAlung.xls")
 Y <- readWorksheet(X, sheet = "VAlung", header = TRUE)
+```
+
+```
+## Error: unable to find an inherited method for function 'readWorksheet' for
+## signature '"jobjRef", "character"'
+```
+
+```r
 head(Y,n=1)
 ```
 
 ```
-##    therapy     cell  t dead kps diagtime age prior
-## 1 standard Squamous 72 dead  60        7  69    no
+## Error: error in evaluating the argument 'x' in selecting a method for function 'head': Error: object 'Y' not found
 ```
 
 ```r
 ## .xlsx file extension
-A <- loadWorkbook("/Users/chris/Documents/SickKidsMaterials/DataExamples/VAlung.xlsx")
+A <- loadWorkbook("/Users/chris/Documents/Rlecture/DataExamples/VAlung.xlsx")
 B <- readWorksheet(A, sheet = "VAlung", header = TRUE)
+```
+
+```
+## Error: unable to find an inherited method for function 'readWorksheet' for
+## signature '"jobjRef", "character"'
+```
+
+```r
 head(B,n=1)
 ```
 
 ```
-##    therapy     cell  t dead kps diagtime age prior
-## 1 standard Squamous 72 dead  60        7  69    no
+## Error: error in evaluating the argument 'x' in selecting a method for function 'head': Error: object 'B' not found
 ```
 
 
@@ -5652,7 +5666,7 @@ Another useful package for importing/exporting Excel data to/from are is `xlsx`.
 ```r
 suppressPackageStartupMessages(library(xlsx))
 ## .xlsx file extension
-A <- read.xlsx("/Users/chris/Documents/SickKidsMaterials/DataExamples/VAlung.xlsx", sheetName="VAlung")
+A <- read.xlsx("/Users/chris/Documents/Rlecture/DataExamples/VAlung.xlsx", sheetName="VAlung")
 head(A,n=1)
 ```
 
@@ -5672,7 +5686,7 @@ More rarely, collaborators send me their SPSS, SAS or STATA files. These can be 
 
 ```r
 suppressPackageStartupMessages(library(foreign))
-stata <- read.dta("/Users/chris/Documents/SickKidsMaterials/DataExamples/VAlung.dta")
+stata <- read.dta("/Users/chris/Documents/Rlecture/DataExamples/VAlung.dta")
 head(stata, n=1)
 ```
 
@@ -5691,13 +5705,12 @@ head(stata, n=1)
 
 ```r
 suppressPackageStartupMessages(library(foreign))
-spss <- read.spss("/Users/chris/Documents/SickKidsMaterials/DataExamples/valung.sav",to.data.frame=TRUE)
+spss <- read.spss("/Users/chris/Documents/Rlecture/DataExamples/valung.sav",to.data.frame=TRUE)
 ```
 
 ```
-## Error: file
-## '/Users/chris/Documents/SickKidsMaterials/DataExamples/valung.sav' is not
-## in any supported SPSS format
+## Error: file '/Users/chris/Documents/Rlecture/DataExamples/valung.sav' is
+## not in any supported SPSS format
 ```
 
 ```r
@@ -5760,7 +5773,7 @@ head(cars,2)
 ```
 
 ```r
-write.csv(x=cars, file="/Users/chris/Documents/SickKidsMaterials/DataExamples/cars.csv", row.names=FALSE)
+write.csv(x=cars, file="/Users/chris/Documents/Rlecture/DataExamples/cars.csv", row.names=FALSE)
 ```
 
 
@@ -6023,7 +6036,7 @@ For example, one can control margins, plot size, lines, text, colour, etc. Below
 
 ## Base R graphics
 
-<img src="figure/base_marg1.png" title="plot of chunk base_marg1" alt="plot of chunk base_marg1" style="display: block; margin: auto;" />
+<img src="assets/fig/base_marg1.png" title="plot of chunk base_marg1" alt="plot of chunk base_marg1" style="display: block; margin: auto;" />
 
 
 
@@ -6031,7 +6044,7 @@ For example, one can control margins, plot size, lines, text, colour, etc. Below
 
 ## Base R graphics
 
-<img src="figure/base_plotreg.png" title="plot of chunk base_plotreg" alt="plot of chunk base_plotreg" style="display: block; margin: auto;" />
+<img src="assets/fig/base_plotreg.png" title="plot of chunk base_plotreg" alt="plot of chunk base_plotreg" style="display: block; margin: auto;" />
 
 
 --- .nobackground
@@ -6144,7 +6157,7 @@ table(a)
 pie(table(a))
 ```
 
-<img src="figure/graph_basepie.png" title="plot of chunk graph_basepie" alt="plot of chunk graph_basepie" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_basepie.png" title="plot of chunk graph_basepie" alt="plot of chunk graph_basepie" style="display: block; margin: auto;" />
 
 
 --- .nobackground
@@ -6179,7 +6192,7 @@ barplot(VADeaths,beside=TRUE,col=rainbow(5),ylab="Death Rate",xlab="Population S
 legend("topright",legend=c("50-54","55-59","60-64","65-69","70-74"),col=rainbow(5),fill=rainbow(5),bty="n")
 ```
 
-<img src="figure/graph_basebarp.png" title="plot of chunk graph_basebarp" alt="plot of chunk graph_basebarp" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_basebarp.png" title="plot of chunk graph_basebarp" alt="plot of chunk graph_basebarp" style="display: block; margin: auto;" />
 
 
 --- .codemargin .outmargin .nobackground
@@ -6194,7 +6207,7 @@ aa <- melt(VADeaths,id.vars=colnames(VADeaths),value.name="Death.Rate")
 barchart(Death.Rate ~ Var2, group=Var1, data=aa, ylim=c(0,100), ylab="Death Rate", xlab="Population Sub-Group", auto.key=TRUE)
 ```
 
-<img src="figure/graph_latbarp.png" title="plot of chunk graph_latbarp" alt="plot of chunk graph_latbarp" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_latbarp.png" title="plot of chunk graph_latbarp" alt="plot of chunk graph_latbarp" style="display: block; margin: auto;" />
 
 
 
@@ -6208,7 +6221,7 @@ suppressPackageStartupMessages(library(ggplot2))
 ggplot(aa, aes(x=Var2,y=Death.Rate,fill=Var1)) + geom_bar(position=position_dodge(),colour="black",stat="identity")  + xlab("Population Sub-Groups") + ylab("Death Rate") + scale_y_continuous(limits=c(0,100),expand = c(0,0)) + theme_bw() 
 ```
 
-<img src="figure/graph_ggbarp.png" title="plot of chunk graph_ggbarp" alt="plot of chunk graph_ggbarp" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_ggbarp.png" title="plot of chunk graph_ggbarp" alt="plot of chunk graph_ggbarp" style="display: block; margin: auto;" />
 
 
 
@@ -6224,7 +6237,7 @@ ggplot(aa, aes(x=Var2,y=Death.Rate,fill=Var1)) + geom_bar(position=position_dodg
 dotchart(VADeaths, xlab="Death Rate")
 ```
 
-<img src="figure/graph_basedot.png" title="plot of chunk graph_basedot" alt="plot of chunk graph_basedot" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_basedot.png" title="plot of chunk graph_basedot" alt="plot of chunk graph_basedot" style="display: block; margin: auto;" />
 
 
 
@@ -6237,7 +6250,7 @@ dotchart(VADeaths, xlab="Death Rate")
 dotplot(Var1~Death.Rate|Var2,data=aa,layout=c(1,5),xlab="Death Rate",ylab="Population Sub-Group")
 ```
 
-<img src="figure/graph_latdot.png" title="plot of chunk graph_latdot" alt="plot of chunk graph_latdot" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_latdot.png" title="plot of chunk graph_latdot" alt="plot of chunk graph_latdot" style="display: block; margin: auto;" />
 
 
 
@@ -6250,7 +6263,7 @@ dotplot(Var1~Death.Rate|Var2,data=aa,layout=c(1,5),xlab="Death Rate",ylab="Popul
 ggplot(aa, aes(x=Death.Rate,y=Var1)) + geom_point(size=2) + facet_grid(Var2~.)
 ```
 
-<img src="figure/graph_ggdot.png" title="plot of chunk graph_ggdot" alt="plot of chunk graph_ggdot" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_ggdot.png" title="plot of chunk graph_ggdot" alt="plot of chunk graph_ggdot" style="display: block; margin: auto;" />
 
 
 
@@ -6266,7 +6279,7 @@ a <- data.frame(a=rnorm(1000))
 hist(a$a,xlab="Support",main="Histogram of Normal RVs",xlim=c(-4,4),ylim=c(0,250))
 ```
 
-<img src="figure/graph_basehist1.png" title="plot of chunk graph_basehist1" alt="plot of chunk graph_basehist1" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_basehist1.png" title="plot of chunk graph_basehist1" alt="plot of chunk graph_basehist1" style="display: block; margin: auto;" />
 
 
 
@@ -6280,7 +6293,7 @@ hist(a$a,xlab="Support",main="Histogram of Normal RVs",xlim=c(-4,4),ylim=c(0,250
 histogram(~a,data=a,xlab="Support",main="Histogram of Normal RVs",xlim=c(-4,4),ylim=c(0,250),type="count",col="white",breaks=15)
 ```
 
-<img src="figure/graph_lathist.png" title="plot of chunk graph_lathist" alt="plot of chunk graph_lathist" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_lathist.png" title="plot of chunk graph_lathist" alt="plot of chunk graph_lathist" style="display: block; margin: auto;" />
 
 
 
@@ -6294,7 +6307,7 @@ histogram(~a,data=a,xlab="Support",main="Histogram of Normal RVs",xlim=c(-4,4),y
 ggplot(a, aes(x=a)) + geom_histogram(binwidth=0.5,, colour="black", fill="white") + theme_bw() + xlab("Support")
 ```
 
-<img src="figure/graph_gghist.png" title="plot of chunk graph_gghist" alt="plot of chunk graph_gghist" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_gghist.png" title="plot of chunk graph_gghist" alt="plot of chunk graph_gghist" style="display: block; margin: auto;" />
 
 
 
@@ -6307,7 +6320,7 @@ ggplot(a, aes(x=a)) + geom_histogram(binwidth=0.5,, colour="black", fill="white"
 plot(density(a$a),type="l",col="red",lwd=2,xlab="Support",main="KDE Normal RVs")
 ```
 
-<img src="figure/graph_basedens.png" title="plot of chunk graph_basedens" alt="plot of chunk graph_basedens" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_basedens.png" title="plot of chunk graph_basedens" alt="plot of chunk graph_basedens" style="display: block; margin: auto;" />
 
 
 --- .codemargin .outmargin .nobackground
@@ -6319,7 +6332,7 @@ plot(density(a$a),type="l",col="red",lwd=2,xlab="Support",main="KDE Normal RVs")
 densityplot(~a,data=a,xlab="Support",main="KDE Normal RVs",col="red",lwd=2,plot.points="rug")
 ```
 
-<img src="figure/graph_latdens.png" title="plot of chunk graph_latdens" alt="plot of chunk graph_latdens" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_latdens.png" title="plot of chunk graph_latdens" alt="plot of chunk graph_latdens" style="display: block; margin: auto;" />
 
 
 
@@ -6333,7 +6346,7 @@ densityplot(~a,data=a,xlab="Support",main="KDE Normal RVs",col="red",lwd=2,plot.
 ggplot(a, aes(x=a)) + geom_line(stat="density", colour="red", lwd=2, lty=2) + theme_bw() + xlab("Support")
 ```
 
-<img src="figure/graph_ggdens.png" title="plot of chunk graph_ggdens" alt="plot of chunk graph_ggdens" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_ggdens.png" title="plot of chunk graph_ggdens" alt="plot of chunk graph_ggdens" style="display: block; margin: auto;" />
 
 
 --- .codemargin .outmargin .nobackground
@@ -6345,7 +6358,7 @@ ggplot(a, aes(x=a)) + geom_line(stat="density", colour="red", lwd=2, lty=2) + th
 boxplot(a$a,ylab="Support")
 ```
 
-<img src="figure/graph_basebw.png" title="plot of chunk graph_basebw" alt="plot of chunk graph_basebw" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_basebw.png" title="plot of chunk graph_basebw" alt="plot of chunk graph_basebw" style="display: block; margin: auto;" />
 
 
 --- .codemargin .outmargin .nobackground
@@ -6358,7 +6371,7 @@ a$f <- factor(rep(1,length(a$a)))
 bwplot(a~f,data=a,ylab="Support",xlab="",label=c(""))
 ```
 
-<img src="figure/graph_latbw.png" title="plot of chunk graph_latbw" alt="plot of chunk graph_latbw" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_latbw.png" title="plot of chunk graph_latbw" alt="plot of chunk graph_latbw" style="display: block; margin: auto;" />
 
 
 
@@ -6371,7 +6384,7 @@ bwplot(a~f,data=a,ylab="Support",xlab="",label=c(""))
 ggplot(a,aes(y=a, x=f)) + geom_boxplot()
 ```
 
-<img src="figure/graph_ggbw.png" title="plot of chunk graph_ggbw" alt="plot of chunk graph_ggbw" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_ggbw.png" title="plot of chunk graph_ggbw" alt="plot of chunk graph_ggbw" style="display: block; margin: auto;" />
 
 
 
@@ -6388,7 +6401,7 @@ names(a) <- c("x","y")
 plot(a,main="X-Y Scatter plot MVN data",xlim=c(-3,3),ylim=c(-3,3))
 ```
 
-<img src="figure/graph_basexy.png" title="plot of chunk graph_basexy" alt="plot of chunk graph_basexy" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_basexy.png" title="plot of chunk graph_basexy" alt="plot of chunk graph_basexy" style="display: block; margin: auto;" />
 
 
 --- .codemargin .outmargin .nobackground 
@@ -6399,7 +6412,7 @@ plot(a,main="X-Y Scatter plot MVN data",xlim=c(-3,3),ylim=c(-3,3))
 xyplot(y~x,data=a,main="X-Y Scatter plot MVN data",xlim=c(-3,3),ylim=c(-3,3))
 ```
 
-<img src="figure/graph_latxy.png" title="plot of chunk graph_latxy" alt="plot of chunk graph_latxy" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_latxy.png" title="plot of chunk graph_latxy" alt="plot of chunk graph_latxy" style="display: block; margin: auto;" />
 
 
 
@@ -6412,7 +6425,7 @@ xyplot(y~x,data=a,main="X-Y Scatter plot MVN data",xlim=c(-3,3),ylim=c(-3,3))
 ggplot(a, aes(x=x,y=y)) + geom_point()
 ```
 
-<img src="figure/graph_ggxy.png" title="plot of chunk graph_ggxy" alt="plot of chunk graph_ggxy" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_ggxy.png" title="plot of chunk graph_ggxy" alt="plot of chunk graph_ggxy" style="display: block; margin: auto;" />
 
 
 
@@ -6427,7 +6440,7 @@ twoD <- with(a,MASS:::kde2d(x,y))
 filled.contour(twoD)
 ```
 
-<img src="figure/mass_kde2d.png" title="plot of chunk mass_kde2d" alt="plot of chunk mass_kde2d" style="display: block; margin: auto;" />
+<img src="assets/fig/mass_kde2d.png" title="plot of chunk mass_kde2d" alt="plot of chunk mass_kde2d" style="display: block; margin: auto;" />
 
 
 
@@ -6442,7 +6455,7 @@ names(a) <- c("x","y","z")
 contourplot(z~x*y,data=a,cut=20,region=TRUE,xlab="X",ylab="Y",main="2D KDE of MVN data")
 ```
 
-<img src="figure/graph_latkde2d.png" title="plot of chunk graph_latkde2d" alt="plot of chunk graph_latkde2d" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_latkde2d.png" title="plot of chunk graph_latkde2d" alt="plot of chunk graph_latkde2d" style="display: block; margin: auto;" />
 
 
 --- .codemargin .outmargin .nobackground
@@ -6454,7 +6467,7 @@ contourplot(z~x*y,data=a,cut=20,region=TRUE,xlab="X",ylab="Y",main="2D KDE of MV
 ggplot(a, aes(x=x,y=y)) + geom_contour(aes(z=z),data=a)
 ```
 
-<img src="figure/unnamed-chunk-160.png" title="plot of chunk unnamed-chunk-160" alt="plot of chunk unnamed-chunk-160" style="display: block; margin: auto;" />
+<img src="assets/fig/unnamed-chunk-160.png" title="plot of chunk unnamed-chunk-160" alt="plot of chunk unnamed-chunk-160" style="display: block; margin: auto;" />
 
 
 
@@ -6476,7 +6489,7 @@ class(AirPassengers)
 plot(AirPassengers)
 ```
 
-<img src="figure/graph_basets.png" title="plot of chunk graph_basets" alt="plot of chunk graph_basets" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_basets.png" title="plot of chunk graph_basets" alt="plot of chunk graph_basets" style="display: block; margin: auto;" />
 
 
 
@@ -6492,7 +6505,7 @@ air <- data.frame(ap=ap,apd=apd)
 xyplot(value~apd,data=air,type="l")
 ```
 
-<img src="figure/graph_latts.png" title="plot of chunk graph_latts" alt="plot of chunk graph_latts" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_latts.png" title="plot of chunk graph_latts" alt="plot of chunk graph_latts" style="display: block; margin: auto;" />
 
 
 --- .codemargin .outmargin .nobackground 
@@ -6508,7 +6521,7 @@ ggplot(air, aes(x=apd,y=value)) + geom_line()
 ## Don't know how to automatically pick scale for object of type ts. Defaulting to continuous
 ```
 
-<img src="figure/graph_ggts.png" title="plot of chunk graph_ggts" alt="plot of chunk graph_ggts" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_ggts.png" title="plot of chunk graph_ggts" alt="plot of chunk graph_ggts" style="display: block; margin: auto;" />
 
 
 
@@ -6523,7 +6536,7 @@ suppressPackageStartupMessages(library(datasets))
 with(Loblolly, interaction.plot(x.factor=age,trace.factor=Seed,response=height))
 ```
 
-<img src="figure/graph_baselong.png" title="plot of chunk graph_baselong" alt="plot of chunk graph_baselong" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_baselong.png" title="plot of chunk graph_baselong" alt="plot of chunk graph_baselong" style="display: block; margin: auto;" />
 
 
 --- .codemargin .outmargin .nobackground 
@@ -6535,7 +6548,7 @@ with(Loblolly, interaction.plot(x.factor=age,trace.factor=Seed,response=height))
 xyplot(height~age, data=Loblolly, group=Seed,type="l")
 ```
 
-<img src="figure/graph_latlong.png" title="plot of chunk graph_latlong" alt="plot of chunk graph_latlong" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_latlong.png" title="plot of chunk graph_latlong" alt="plot of chunk graph_latlong" style="display: block; margin: auto;" />
 
 
 
@@ -6548,7 +6561,7 @@ xyplot(height~age, data=Loblolly, group=Seed,type="l")
 ggplot(Loblolly, aes(y=height,x=age,group=Seed)) + geom_line()
 ```
 
-<img src="figure/graph_gglong.png" title="plot of chunk graph_gglong" alt="plot of chunk graph_gglong" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_gglong.png" title="plot of chunk graph_gglong" alt="plot of chunk graph_gglong" style="display: block; margin: auto;" />
 
 
 
@@ -6561,7 +6574,7 @@ ggplot(Loblolly, aes(y=height,x=age,group=Seed)) + geom_line()
 curve(factorial(x-1),from=1,to=50,n=50,log="y")
 ```
 
-<img src="figure/graph_basecurve.png" title="plot of chunk graph_basecurve" alt="plot of chunk graph_basecurve" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_basecurve.png" title="plot of chunk graph_basecurve" alt="plot of chunk graph_basecurve" style="display: block; margin: auto;" />
 
 
 
@@ -6575,7 +6588,7 @@ a <- data.frame(x=1:50,y=factorial(1:50))
 xyplot(y~x,data=a,type="l",scales=list(y=list(log="e")))
 ```
 
-<img src="figure/graph_latcurve.png" title="plot of chunk graph_latcurve" alt="plot of chunk graph_latcurve" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_latcurve.png" title="plot of chunk graph_latcurve" alt="plot of chunk graph_latcurve" style="display: block; margin: auto;" />
 
 
 --- .codemargin .outmargin .nobackground 
@@ -6587,7 +6600,7 @@ xyplot(y~x,data=a,type="l",scales=list(y=list(log="e")))
 ggplot(a, aes(x=x,y=y)) + geom_line() + scale_y_log10()
 ```
 
-<img src="figure/graph_ggcurve.png" title="plot of chunk graph_ggcurve" alt="plot of chunk graph_ggcurve" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_ggcurve.png" title="plot of chunk graph_ggcurve" alt="plot of chunk graph_ggcurve" style="display: block; margin: auto;" />
 
 
 
@@ -6614,7 +6627,7 @@ suppressPackageStartupMessages(library(faraway))
 plot(ozone[,1:9])
 ```
 
-<img src="figure/graph_basesmat.png" title="plot of chunk graph_basesmat" alt="plot of chunk graph_basesmat" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_basesmat.png" title="plot of chunk graph_basesmat" alt="plot of chunk graph_basesmat" style="display: block; margin: auto;" />
 
 
 
@@ -6627,7 +6640,7 @@ plot(ozone[,1:9])
 pairs(ozone[,1:9])
 ```
 
-<img src="figure/graph_basesmat1.png" title="plot of chunk graph_basesmat1" alt="plot of chunk graph_basesmat1" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_basesmat1.png" title="plot of chunk graph_basesmat1" alt="plot of chunk graph_basesmat1" style="display: block; margin: auto;" />
 
 
 
@@ -6641,7 +6654,7 @@ suppressPackageStartupMessages(library(lattice))
 splom(ozone[1:9])
 ```
 
-<img src="figure/graph_latsmat.png" title="plot of chunk graph_latsmat" alt="plot of chunk graph_latsmat" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_latsmat.png" title="plot of chunk graph_latsmat" alt="plot of chunk graph_latsmat" style="display: block; margin: auto;" />
 
 
 
@@ -6679,7 +6692,7 @@ suppressPackageStartupMessages(library(corrplot))
 corrplot(cormat)
 ```
 
-<img src="figure/graph_corrmat.png" title="plot of chunk graph_corrmat" alt="plot of chunk graph_corrmat" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_corrmat.png" title="plot of chunk graph_corrmat" alt="plot of chunk graph_corrmat" style="display: block; margin: auto;" />
 
 
 
@@ -6695,7 +6708,7 @@ states_map <- map_data("state")
 ggplot(states_map, aes(x=long,y=lat,group=group)) + geom_path() + coord_map("mercator") + theme_bw()
 ```
 
-<img src="figure/graph_map.png" title="plot of chunk graph_map" alt="plot of chunk graph_map" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_map.png" title="plot of chunk graph_map" alt="plot of chunk graph_map" style="display: block; margin: auto;" />
 
 
 --- .nobackground 
@@ -6723,7 +6736,7 @@ crime_map <- merge(states_map,crimes,by.x="region",by.y="state")
 ggplot(crimes, aes(map_id=state,fill=Assault)) + geom_map(map=states_map, colour="black") + scale_fill_gradient2(low ="#559999", mid="grey90", high="#BB650B", midpoint=median(crimes$Assault)) + expand_limits(x=states_map$long, y=states_map$lat) + coord_map("polyconic") + theme_bw()
 ```
 
-<img src="figure/graph_cmap.png" title="plot of chunk graph_cmap" alt="plot of chunk graph_cmap" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_cmap.png" title="plot of chunk graph_cmap" alt="plot of chunk graph_cmap" style="display: block; margin: auto;" />
 
 
 
@@ -6762,13 +6775,6 @@ install_github('shiny', 'rstudio')
 
 ```r
 require(rCharts)
-```
-
-```
-## Loading required package: rCharts
-```
-
-```r
 haireye = as.data.frame(HairEyeColor)
 n1 <- nPlot(Freq ~ Hair, group = 'Eye', type = 'multiBarChart', data = subset(haireye, Sex == 'Male'))
 ```
@@ -6966,7 +6972,7 @@ Let `c(a=2,b=-4,c=1,d=-3,e=5,g=9,f=-10)` and plot the function using `curve()`.
 
 <br/>
 
-<img src="figure/graph_ex1.png" title="plot of chunk graph_ex1" alt="plot of chunk graph_ex1" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_ex1.png" title="plot of chunk graph_ex1" alt="plot of chunk graph_ex1" style="display: block; margin: auto;" />
 
 
 
@@ -7001,7 +7007,7 @@ Let `c(a=2,b=-4,c=1,d=-3,e=5,g=9,f=-10)` and plot the function using `curve()`.
 <li> Recreate the plot below using base R functions. Data is simulated by <code>set.seed(12345)</code> followed by <code>rnorm(1000)</code>. Hint: search <code>?par</code>. </li> 
 </ol>
 
-<img src="figure/graph_ex2.png" title="plot of chunk graph_ex2" alt="plot of chunk graph_ex2" style="display: block; margin: auto;" />
+<img src="assets/fig/graph_ex2.png" title="plot of chunk graph_ex2" alt="plot of chunk graph_ex2" style="display: block; margin: auto;" />
 
 
 
@@ -7188,7 +7194,7 @@ Below is a box-plot describing the main features of the bilirubin variable in th
 boxplot(pbc$bili, ylim=c(0,30), ylab="Bilirubin Levels", main="Boxplot of Bilirubin Levels")
 ```
 
-<img src="figure/uni_box.png" title="plot of chunk uni_box" alt="plot of chunk uni_box" style="display: block; margin: auto;" />
+<img src="assets/fig/uni_box.png" title="plot of chunk uni_box" alt="plot of chunk uni_box" style="display: block; margin: auto;" />
 
 
 
@@ -7203,7 +7209,7 @@ Below is a histogram describing the distribution of bilirubin in this sample. Ag
 hist(pbc$bili, xlab="Bilirubin Levels", main="Histogram of bilirubin levels", ylim=c(0,300),breaks=seq(0,30,2.5))
 ```
 
-<img src="figure/uni_hist.png" title="plot of chunk uni_hist" alt="plot of chunk uni_hist" style="display: block; margin: auto;" />
+<img src="assets/fig/uni_hist.png" title="plot of chunk uni_hist" alt="plot of chunk uni_hist" style="display: block; margin: auto;" />
 
 
 
@@ -7218,7 +7224,7 @@ Below is a kernel density estimate describing the distribution of bilirubin in t
 plot(density(pbc$bili,from=0,to=max(pbc$bili)), xlab="Bilirubin Levels", ylab="Density", main="KDE of Bilirubin Levels",ylim=c(0,0.4))
 ```
 
-<img src="figure/uni_dens.png" title="plot of chunk uni_dens" alt="plot of chunk uni_dens" style="display: block; margin: auto;" />
+<img src="assets/fig/uni_dens.png" title="plot of chunk uni_dens" alt="plot of chunk uni_dens" style="display: block; margin: auto;" />
 
 
 --- .codemargin .outmargin .nobackground 
@@ -7370,7 +7376,7 @@ Scatter plot of the relationship between bilirubin and copper.
 plot(pbc$bili, pbc$copper, xlim=c(0,30),ylim=c(0,600),xlab="Bilirubin",ylab="Copper",main="Bivariate Relationship Between Bilirubin and Copper")
 ```
 
-<img src="figure/biv_scatter.png" title="plot of chunk biv_scatter" alt="plot of chunk biv_scatter" style="display: block; margin: auto;" />
+<img src="assets/fig/biv_scatter.png" title="plot of chunk biv_scatter" alt="plot of chunk biv_scatter" style="display: block; margin: auto;" />
 
 
 
@@ -7434,7 +7440,7 @@ One useful function I have not shown too much yet which you should remember is `
 
 1. Using the `Exam` dataset in the `mlmRev` package Invesitgate the relationship between `normexam` scores and `standLRT` scores. Plot the relationship on a graph. Give the axes proper labels, and give the graph a title. Using either the `loess()` or `lowess()` functions plot a smooth red line through the cloud of data. Estimate Pearson product moment correlation coefficient. In the top left corner of the graph insert the following text: $\rho=0.591$. Bonus: describe to yourself (or your peer) what the `f=` argument in `lowess()` does. What is the equivalent argument in `loess()`?  
 
-<img src="figure/labdes_fig.png" title="plot of chunk labdes_fig" alt="plot of chunk labdes_fig" style="display: block; margin: auto;" />
+<img src="assets/fig/labdes_fig.png" title="plot of chunk labdes_fig" alt="plot of chunk labdes_fig" style="display: block; margin: auto;" />
 
 
 --- .nobackground
@@ -7582,7 +7588,7 @@ ll_surf <- n*lambda - sumx*log(lambda) + sum_log_xfact
 
 ## Poisson MLE example
 
-<img src="figure/inf_pois.png" title="plot of chunk inf_pois" alt="plot of chunk inf_pois" style="display: block; margin: auto;" />
+<img src="assets/fig/inf_pois.png" title="plot of chunk inf_pois" alt="plot of chunk inf_pois" style="display: block; margin: auto;" />
 
 
 
@@ -7681,8 +7687,8 @@ apropos("\\.test$")
 ## [19] "pairwise.wilcox.test" "poisson.test"         "power.anova.test"    
 ## [22] "power.prop.test"      "power.t.test"         "PP.test"             
 ## [25] "prop.test"            "prop.trend.test"      "quade.test"          
-## [28] "shapiro.test"         "t.test"               "var.test"            
-## [31] "wilcox.test"
+## [28] "shapiro.test"         "spearman.test"        "t.test"              
+## [31] "var.test"             "wilcox.test"
 ```
 
 
@@ -7948,7 +7954,7 @@ The t-test and the wilcoxon rank sum test gave different answers. Lets graphical
 boxplot(pbc$bili~pbc$sex,xlab="Gender",ylab="Bilirubin Levels",ylim=c(0,30))
 ```
 
-<img src="figure/inf_boxloc.png" title="plot of chunk inf_boxloc" alt="plot of chunk inf_boxloc" style="display: block; margin: auto;" />
+<img src="assets/fig/inf_boxloc.png" title="plot of chunk inf_boxloc" alt="plot of chunk inf_boxloc" style="display: block; margin: auto;" />
 
 
 
@@ -7962,7 +7968,7 @@ plot(density(pbc$bili[pbc$sex=="m"],from=0),type="l",col="black",ylab="Density",
 lines(density(pbc$bili[pbc$sex=="f"],from=0),type="l",col="red")
 ```
 
-<img src="figure/inf_densloc.png" title="plot of chunk inf_densloc" alt="plot of chunk inf_densloc" style="display: block; margin: auto;" />
+<img src="assets/fig/inf_densloc.png" title="plot of chunk inf_densloc" alt="plot of chunk inf_densloc" style="display: block; margin: auto;" />
 
 
 --- .nobackground
@@ -8192,12 +8198,12 @@ Estimation and hypothesis testing are a HUGE area of theoretical and applied sta
 
 ```
 ##    user  system elapsed 
-##   0.011   0.000   0.011
+##   0.016   0.000   0.017
 ```
 
 ```
 ##    user  system elapsed 
-##    0.01    0.00    0.01
+##   0.011   0.000   0.011
 ```
 
 
@@ -8511,7 +8517,7 @@ round(cor(ozone),digits=2)
 
 ## Linear Regression in R
 
-<img src="figure/reg_plotpairs.png" title="plot of chunk reg_plotpairs" alt="plot of chunk reg_plotpairs" style="display: block; margin: auto;" />
+<img src="assets/fig/reg_plotpairs.png" title="plot of chunk reg_plotpairs" alt="plot of chunk reg_plotpairs" style="display: block; margin: auto;" />
 
 
 --- .nobackground
@@ -8584,14 +8590,14 @@ summary(o3mod)
 
 ## Linear Regression in R
 
-<img src="figure/lin_diag.png" title="plot of chunk lin_diag" alt="plot of chunk lin_diag" style="display: block; margin: auto;" />
+<img src="assets/fig/lin_diag.png" title="plot of chunk lin_diag" alt="plot of chunk lin_diag" style="display: block; margin: auto;" />
 
 
 --- .nobackground
 
 ## Linear Regression in R
 
-<img src="figure/lin_hist.png" title="plot of chunk lin_hist" alt="plot of chunk lin_hist" style="display: block; margin: auto;" />
+<img src="assets/fig/lin_hist.png" title="plot of chunk lin_hist" alt="plot of chunk lin_hist" style="display: block; margin: auto;" />
 
 
 
@@ -8880,13 +8886,7 @@ ddply(warpbreaks, .(wool, tension), summarize, mean=mean(breaks), var=var(breaks
 ```
 
 ```
-##   wool tension  mean    var
-## 1    A       L 44.56 327.53
-## 2    A       M 24.00  75.00
-## 3    A       H 24.56 105.53
-## 4    B       L 28.22  97.19
-## 5    B       M 28.78  88.94
-## 6    B       H 18.78  23.94
+## Error: argument "by" is missing, with no default
 ```
 
 
@@ -8901,7 +8901,7 @@ interaction.plot(warpbreaks$tension,warpbreaks$wool,warpbreaks$breaks,fun=mean,t
 legend("topright",c("A","B"),lty=c(2,1),bty="n")
 ```
 
-<img src="figure/regP_poisint.png" title="plot of chunk regP_poisint" alt="plot of chunk regP_poisint" style="display: block; margin: auto;" />
+<img src="assets/fig/regP_poisint.png" title="plot of chunk regP_poisint" alt="plot of chunk regP_poisint" style="display: block; margin: auto;" />
 
 
 --- .nobackground
@@ -8977,19 +8977,11 @@ Before starting, let's just plot the overall survival experience in this sample 
 
 ```r
 suppressPackageStartupMessages(library(rms))
-```
-
-```
-## Warning: failed to assign RegisteredNativeSymbol for twins to twins since
-## twins is already defined in the 'cluster' namespace
-```
-
-```r
 survplot(npsurv(Surv(as.numeric(time)/365,status1==1) ~ 1, data=pbc), time.inc=2, type="kaplan-meier", conf="none", label=FALSE)
 text(7,0.01,"Years Since Study Registration")
 ```
 
-<img src="figure/reg_km.png" title="plot of chunk reg_km" alt="plot of chunk reg_km" style="display: block; margin: auto;" />
+<img src="assets/fig/reg_km.png" title="plot of chunk reg_km" alt="plot of chunk reg_km" style="display: block; margin: auto;" />
 
 
 --- .nobackground

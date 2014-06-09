@@ -1,0 +1,39 @@
+\documentclass[10pt, a4paper]{article}
+
+\title{Another Introductory R Session}
+\author{Christopher Meaney}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+This workshop focuses on introducing physicians, researchers, coordinators/managers and students of all backgrounds to the R programming language. What is R? R is a complete, interactive, object-oriented language: designed by statisticians, for statisticians. The language provides objects, operators and functions that make the process of exploring, modelling, and visualizing data a natural one. Complete data analyses can often be represented in just a few lines of code. \\
+
+The workshop takes place over two days. The workshop is divided into 13 modules. The topics are listed below: \\
+
+\begin{itemize}
+\item A Quick Intro to Everything R 
+\item Data Structures 
+\item Control Structures
+\item User Defined Functions
+\item Working with Strings
+\item Data Manipulation 
+\item Advanced Data Manipulation (plyr and reshape)
+\item Random Number Generation
+\item Input/Output in R (Connections)
+\item R Graphics (Traditional graphics, grid graphics, lattice and ggplot2)
+\item Descriptive Statistics
+\item Inference: Estimation and Hypothesis Testing
+\item Regression Models in R
+\end{itemize}
+
+The slide deck is massively long (432 pages) and we wanted to be environmentally friendly, so the slides are not being printed. The slide deck, all source code, and necessary files are being hosted on Chris' GitHub page. Go to the link below to access all this workshops materials: \\
+
+\begin{itemize}
+\item http://meaneych.github.io/Rlecture
+\end{itemize}
+
+
+
+\end{document}

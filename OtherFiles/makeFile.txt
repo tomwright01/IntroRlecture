@@ -1,0 +1,69 @@
+################################
+## install from github
+################################
+require(devtools)
+install_github(c('slidify', 'slidifyLibraries'), 'ramnathv', ref = 'dev')
+install_github('rCharts', 'ramnathv')
+install_github('shiny', 'rstudio')
+
+
+#################################
+## Install required packages
+#################################
+install.packages(datasets)
+install.packages(survival)
+install.packages(mlmRev)
+install.packages(reshape2)
+install.packages(plyr)
+install.packages(lme4)
+install.packages(XLConnect)
+install.packages(xlsx)
+install.packages(foreign)
+install.packages(lattice)
+install.packages(ggplot2)
+install.packages(MASS)
+install.packages(faraway)
+install.packages(maps)
+install.packages(mapproj)
+install.packages(googleVis)
+install.packages(rms)
+
+
+######################################
+## Set working directory
+######################################
+setwd("/Users/chris/Documents/Rlecture/")
+
+#####################################
+## Load packages
+#####################################
+library(slidify)
+library(slidifyLibraries)
+library(datasets)
+library(survival)
+library(mlmRev)
+library(reshape2)
+library(plyr)
+library(lme4)
+library(XLConnect)
+library(xlsx)
+library(foreign)
+library(lattice)
+library(ggplot2)
+library(MASS)
+library(faraway)
+library(maps)
+library(mapproj)
+library(rCharts)
+library(googleVis)
+library(rms)
+
+######################################
+## Knit Rmd to md to html...
+######################################
+slidify("index.Rmd")
+browseURL("index.html")
+
+
+
+

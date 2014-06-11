@@ -3315,7 +3315,7 @@ mean.iris.loop
 ## Advanced Data Manipulation in R
 
 ```{r, echo=TRUE, results='markup'}
-install.packages(plyr,quiet=TRUE)
+install.packages('plyr',quiet=TRUE)
 suppressPackageStartupMessages(library(plyr))
 ddply(iris,~Species,function(x) colMeans(x[,-which(colnames(x)=="Species")]))
 ```
